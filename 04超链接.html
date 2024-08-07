@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 超链接标签
+            a
+                href 用于定义要跳转的目标资源的地址
+                    1 完整路径 https://www.163.com/
+                    2 相对路径 以当前资源的所在路径为出发点去找目标资源
+                               ./ 表示的当前资源的所在路径，可以省略不写
+                               ../ 表示当前资源的上一层路径，需要时必须写出来
+                    3 绝对路径
+                                无论当前资源在哪里，使用固定的位置作为出发点去找目标资源
+                                以 / 开头
+                target 用于定义目标资源的打开方式
+                    _self 在当前窗口打开目标资源
+                    _blank 开启新窗口打开目标资源
+    -->
+    
+    <a href="https://www.163.com/" target="_blank">网易</a>
+    <!-- 相对路径写法 -->
+    <a href="02标题段落换行.html" target="_blank">02标题标签</a>
+    <a href="a/b/test.html" target="_blank">相对test</a>
+    <!-- 绝对路径写法 -->
+     <a href="/demo1-html/a/b/test.html"target="_blank">绝对test</a>
+</body>
+</html>
