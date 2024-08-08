@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+        1 元素选择器 根据标签的名字确定样式的作用元素
+            语法：标签名{}
+            缺点：某些同名的元素不希望使用某些样式，某些不同名的元素也使用该样式，都无法协调
+        2 id选择器 根据标签的id值确定样式的作用元素
+                    一般每个元素都有id属性，但是在一个页面中，id的值不应该相同，id具有唯一性
+            语法：#id值{}
+            缺点：id值具有唯一性，样式只能作用到一个元素上
+        3 class选择器 根据元素的class属性值确定样式的作用元素
+                        元素的class属性值可以重复 而且一个元素的class属性可以有多个值
+            语法：.class值{}
+
+         */
+         /* input{
+            width: 80px;
+            height: 50px;
+            background-color: darksalmon;
+            color: aliceblue;
+            border: 3px solid goldenrod;
+            border-radius: 5px;
+            font-size: 24px;
+            font-family: '隶书';
+            line-height: 30px;
+         } 
+            
+         */
+
+         /* #btn5{
+            width: 80px;
+            height: 50px;
+            background-color: darksalmon;
+            color: aliceblue;
+            border: 3px solid goldenrod;
+            border-radius: 5px;
+            font-size: 24px;
+            font-family: '隶书';
+            line-height: 30px;
+         } 
+        */
+
+        .shapeclass{
+            width: 80px;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        .colorclass{
+            background-color: rgb(219, 238, 7);
+            color: rgb(146, 7, 7);
+            border: 5px solid rgb(92, 234, 92);
+        }
+        
+        .fontclass{
+            font-size: 28px;
+            font-family: '隶书';
+            line-height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <input class="shapeclass colorclass fontclass" id="btn1" type="button" value="按钮">
+    <input id="btn2" type="button" value="按钮">
+    <input id="btn3" type="button" value="按钮">
+    <input id="btn4" type="button" value="按钮">
+    <button class="shapeclass colorclass fontclass" id="btn5">按钮</button>
+</body>
+</html>
